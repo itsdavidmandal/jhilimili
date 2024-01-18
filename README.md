@@ -31,8 +31,7 @@ This HTML file creates a simple interactive webpage with a grid of four cells th
 
 ## File Structure
 
-- `index.html` (or any preferred filename)
-
+- `index.html`
 ## Usage
 
 1. Open the HTML file in a web browser.
