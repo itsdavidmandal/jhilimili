@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .cell{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="change()"> CHhange the style</button>
+    <table>
+        <tr>
+            <td class="cell" id="c1"></td>
+            <td class="cell" id="c2"></td>
+            <td class="cell" id="c3"></td>
+            <td class="cell" id="c4"></td>
+        </tr>
+    </table>
+
+    <button onclick="change()"> CHhange the style</button>
+    <script>
+        function change(){
+            var color = ["red", "blue", "yellow", "green"];
+
+            var c1 = document.getElementById("c1");
+            var c2 = document.getElementById("c2");
+            var c3 = document.getElementById("c3");
+            var c4 = document.getElementById("c4");
+
+            var cells = [c1,c2,c3,c4]
+
+            for(var i = 0;i <cells.length ;i++) {
+                var random_i = Math.trunc(Math.random()*4);
+                cells[i].style.backgroundColor = color[random_i];
+            }
+
+      
+        }
+
+        change();
+
+    </script>
+</body>
+</html>
